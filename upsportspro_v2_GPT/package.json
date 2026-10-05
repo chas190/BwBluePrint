@@ -12,7 +12,8 @@
     "format": "prettier --write .",
     "test": "vitest run",
     "test:watch": "vitest",
-    "start": "node .output/server/index.mjs"
+    "start": "node .output/server/index.mjs",
+    "build:site": "npm run build && node scripts/export-static.mjs"
   },
   "overrides": {
     "rolldown": "1.2.1"
