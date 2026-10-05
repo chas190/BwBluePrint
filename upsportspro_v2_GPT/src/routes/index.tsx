@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import heroImage from "@/assets/webheropg1upsports.png";
 import mentorImage from "@/assets/webpic4pg1upsports.png";
 import communityImage from "@/assets/webpic2pg1upsports.png";
+import countyConnectionImage from "@/assets/upsports-county-connection.png";
 import eventsImage from "@/assets/upsports-events.jpeg";
 
 const title = "UpSports | Mentoring Tomorrow's Champions";
@@ -79,6 +80,18 @@ function Index() {
             <div className="aspect-[4/3] overflow-hidden"><img src={communityImage} alt="Families and young players in UpSports colours cheering from the sideline of a youth soccer game" loading="lazy" width={1558} height={1009} className="h-full w-full object-cover" /></div>
             <div><p className="section-kicker"><span /> Stronger together / 04</p><h2 className="mt-6 font-display text-4xl font-bold leading-[1.05] md:text-5xl">When a team grows, a town grows with it.</h2><p className="mt-7 text-lg leading-8 text-muted-foreground">A team connects more than the players on its roster. Families meet. Neighbors show up. Local businesses find a way to contribute. Familiar faces become lasting relationships.</p><p className="mt-5 text-lg leading-8 text-muted-foreground">As part of the wider BwTown vision, UpSports gives that spirit of cooperation a place to begin—and a reason to keep going.</p></div>
           </div>
+        </section>
+
+        <section aria-labelledby="county-connection-title" className="bg-ink text-ink-foreground">
+          <div className="mx-auto max-w-[1440px] px-5 pt-12 md:px-10 lg:px-16">
+            <p className="section-kicker section-kicker-light"><span /> The BwTown vision</p>
+            <h2 id="county-connection-title" className="mt-5 font-display text-4xl font-bold leading-[1.05] md:text-5xl">One county. Many towns. One team.</h2>
+            <p className="mt-5 max-w-[780px] text-lg leading-8 text-ink-foreground/80">UpSports connects the people who make a town stronger—players, coaches, families, schools, and local businesses. Across neighboring towns, those relationships can become a shared foundation for the BwTown blueprint.</p>
+          </div>
+          <figure className="mx-auto mt-9 max-w-[1440px] pb-10">
+            <img src={countyConnectionImage} alt="Concept illustration of an UpSports coach mentoring young athletes, with families, a local market, and neighboring towns connected across rolling hills" loading="lazy" width={1672} height={941} className="h-auto w-full" />
+            <figcaption className="px-5 pt-4 text-sm text-ink-foreground/65 md:px-10 lg:px-16">An illustration of the BwTown vision for connected communities.</figcaption>
+          </figure>
         </section>
 
         <section id="events" className="scroll-mt-6 bg-surface py-20 md:py-28">
