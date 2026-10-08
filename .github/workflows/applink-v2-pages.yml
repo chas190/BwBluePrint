@@ -1,0 +1,53 @@
+name: AppLink V2 GitHub Pages
+on:
+  push:
+    branches: [main]
+    paths: ['applink_dashboard_v2_GPT/**', '.github/workflows/applink-v2-pages.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+concurrency:
+  group: github-pages
+  cancel-in-progress: false
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+          cache-dependency-path: applink_dashboard_v2_GPT/package-lock.json
+      - name: Install
+        working-directory: applink_dashboard_v2_GPT
+        run: npm ci
+      - name: Validate
+        working-directory: applink_dashboard_v2_GPT
+        run: npm run typecheck && npm test
+      - name: Build
+        working-directory: applink_dashboard_v2_GPT
+        env:
+          BASE_PATH: /BwBluePrint/applink_dashboard_v2_GPT/
+        run: npm run build
+      - name: Assemble site
+        run: |
+          mkdir -p pages/applink_dashboard_v2_GPT
+          cp -a applink_dashboard_v2_GPT/dist/. pages/applink_dashboard_v2_GPT/
+          touch pages/.nojekyll
+          printf '%s' '<!doctype html><meta charset="utf-8"><title>BwBluePrint Apps</title><a href="./applink_dashboard_v2_GPT/">Open AppLink Dashboard</a>' > pages/index.html
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: pages
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/configure-pages@v5
+      - uses: actions/deploy-pages@v4
+        id: deployment
