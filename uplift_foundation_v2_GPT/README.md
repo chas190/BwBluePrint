@@ -2,6 +2,8 @@
 
 An independent, responsive static website for the Uplift Foundation concept. It presents the mission, Board of Investment, project pathway, Sustainable Development Goals alignment, and the local impact model.
 
+The wide `assets/uplift-hero-community-v2.webp` photograph is the homepage hero image. `assets/uplift-community.webp` supports the local impact section.
+
 ## Preview locally
 
 Open `index.html` in a browser or run a small static server from this directory:
