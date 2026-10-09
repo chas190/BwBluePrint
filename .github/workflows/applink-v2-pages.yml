@@ -2,7 +2,10 @@ name: AppLink V2 GitHub Pages
 on:
   push:
     branches: [main]
-    paths: ['applink_dashboard_v2_GPT/**', '.github/workflows/applink-v2-pages.yml']
+    paths:
+      - 'applink_dashboard_v2_GPT/**'
+      - 'uplift_foundation_v2_GPT/**'
+      - '.github/workflows/applink-v2-pages.yml'
   workflow_dispatch:
 permissions:
   contents: read
@@ -35,9 +38,32 @@ jobs:
       - name: Assemble site
         run: |
           mkdir -p pages/applink_dashboard_v2_GPT
+          mkdir -p pages/uplift_foundation_v2_GPT
           cp -a applink_dashboard_v2_GPT/dist/. pages/applink_dashboard_v2_GPT/
+          cp -a uplift_foundation_v2_GPT/. pages/uplift_foundation_v2_GPT/
           touch pages/.nojekyll
-          printf '%s' '<!doctype html><meta charset="utf-8"><title>BwBluePrint Apps</title><a href="./applink_dashboard_v2_GPT/">Open AppLink Dashboard</a>' > pages/index.html
+          cat > pages/index.html <<'HTML'
+          <!doctype html>
+          <html lang="en">
+          <head>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <meta name="theme-color" content="#0b2d3d">
+            <title>BwBluePrint | Community Projects</title>
+            <style>
+              *{box-sizing:border-box}body{margin:0;background:#f6f5ef;color:#15313e;font:16px/1.6 system-ui,-apple-system,Segoe UI,sans-serif}.wrap{width:min(1040px,calc(100% - 40px));margin:auto}.hero{padding:68px 0 48px;background:#0b2d3d;color:#fff}.eyebrow{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:#e8ad3d;font-weight:700}.hero h1{font:400 clamp(40px,7vw,68px)/1 Georgia,serif;margin:14px 0}.hero p{max-width:530px;color:#d5e0df}.apps{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px;padding:42px 0}.card{background:#fff;border:1px solid #e3e8e2;border-radius:6px;padding:27px;box-shadow:0 8px 28px #092e3b0d}.card h2{font:400 26px Georgia,serif;margin:0 0 8px}.card p{color:#5d7076;font-size:14px;min-height:65px}.card a{display:inline-block;margin-top:9px;background:#1d6847;color:#fff;padding:11px 15px;border-radius:4px;text-decoration:none;font-weight:700;font-size:13px}.card a:hover{background:#267b54}footer{border-top:1px solid #e2e4dc;padding:20px 0;color:#718087;font-size:12px}@media(max-width:520px){.hero{padding:50px 0 35px}.apps{padding:25px 0}}
+            </style>
+          </head>
+          <body>
+            <header class="hero"><div class="wrap"><div class="eyebrow">BwBluePrint · V2 Projects</div><h1>Ideas built to move forward.</h1><p>Independent web projects exploring stronger communities, better tools, and lasting local impact.</p></div></header>
+            <main class="wrap"><section class="apps" aria-label="Published projects">
+              <article class="card"><h2>Uplift Foundation</h2><p>Connect community priorities with investment strategy, project oversight, and lasting local benefit.</p><a href="./uplift_foundation_v2_GPT/">Explore Uplift →</a></article>
+              <article class="card"><h2>AppLink Dashboard</h2><p>Open the AppLink V2 dashboard and its project tools.</p><a href="./applink_dashboard_v2_GPT/">Open AppLink →</a></article>
+            </section></main>
+            <footer><div class="wrap">BwBluePrint · Independent project experiences</div></footer>
+          </body>
+          </html>
+          HTML
       - uses: actions/upload-pages-artifact@v3
         with:
           path: pages
