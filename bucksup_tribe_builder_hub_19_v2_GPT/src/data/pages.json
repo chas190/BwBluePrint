@@ -1,0 +1,284 @@
+{
+  "pages": [
+    {
+      "path": "/",
+      "name": "Home",
+      "description": "Landing page and entry point to the app",
+      "category": "core",
+      "requiresAuth": false
+    },
+    {
+      "path": "/auth",
+      "name": "Authentication",
+      "description": "Login and authentication page",
+      "category": "auth",
+      "requiresAuth": false
+    },
+    {
+      "path": "/signup",
+      "name": "Sign Up",
+      "description": "User registration and account creation",
+      "category": "auth",
+      "requiresAuth": false
+    },
+    {
+      "path": "/main",
+      "name": "Main Dashboard",
+      "description": "Primary dashboard with main app functionality",
+      "category": "main",
+      "requiresAuth": true
+    },
+    {
+      "path": "/main2",
+      "name": "Main Dashboard v2",
+      "description": "Alternative main dashboard layout",
+      "category": "main",
+      "requiresAuth": true
+    },
+    {
+      "path": "/main3",
+      "name": "Main Dashboard v3",
+      "description": "Third version of main dashboard",
+      "category": "main",
+      "requiresAuth": true
+    },
+    {
+      "path": "/main4",
+      "name": "Main Dashboard v4",
+      "description": "Fourth version of main dashboard",
+      "category": "main",
+      "requiresAuth": true
+    },
+    {
+      "path": "/main8",
+      "name": "Main Dashboard v8",
+      "description": "Eighth version of main dashboard",
+      "category": "main",
+      "requiresAuth": true
+    },
+    {
+      "path": "/main8b",
+      "name": "Main Dashboard v8b",
+      "description": "Alternative version of main dashboard v8",
+      "category": "main",
+      "requiresAuth": true
+    },
+    {
+      "path": "/main11",
+      "name": "Main Dashboard v11",
+      "description": "Latest version of main dashboard",
+      "category": "main",
+      "requiresAuth": true
+    },
+    {
+      "path": "/main11-guide",
+      "name": "Main Dashboard Guide",
+      "description": "Guide and tutorial for main dashboard",
+      "category": "main",
+      "requiresAuth": true
+    },
+    {
+      "path": "/maincopy060325",
+      "name": "Main Copy 06/03/25",
+      "description": "Copy of main dashboard from March 6, 2025",
+      "category": "main",
+      "requiresAuth": true
+    },
+    {
+      "path": "/info",
+      "name": "Info Quest Cover",
+      "description": "Welcome page for the info quest journey",
+      "category": "info",
+      "requiresAuth": false
+    },
+    {
+      "path": "/info/question",
+      "name": "Info Quest Questions",
+      "description": "Interactive questions in the info quest",
+      "category": "info",
+      "requiresAuth": false
+    },
+    {
+      "path": "/info/group-complete",
+      "name": "Info Quest Complete",
+      "description": "Completion page for info quest group",
+      "category": "info",
+      "requiresAuth": false
+    },
+    {
+      "path": "/start",
+      "name": "Onboarding: Start",
+      "description": "Main entry point for BucksUp onboarding journey",
+      "category": "onboarding",
+      "requiresAuth": false
+    },
+    {
+      "path": "/start/page1-intro",
+      "name": "Onboarding: Welcome",
+      "description": "Introduction to BucksUp onboarding experience",
+      "category": "onboarding",
+      "requiresAuth": false
+    },
+    {
+      "path": "/start/page2-difference",
+      "name": "Onboarding: The Difference",
+      "description": "How BucksUp differs from other financial apps",
+      "category": "onboarding",
+      "requiresAuth": false
+    },
+    {
+      "path": "/start/page3-autogrowth",
+      "name": "Onboarding: Auto Growth",
+      "description": "AI-powered automated wealth building",
+      "category": "onboarding",
+      "requiresAuth": false
+    },
+    {
+      "path": "/start/page4-coopmodel",
+      "name": "Onboarding: Cooperative Model",
+      "description": "Member-powered financial cooperative advantages",
+      "category": "onboarding",
+      "requiresAuth": false
+    },
+    {
+      "path": "/start/page5-retireearly",
+      "name": "Onboarding: Retire Early",
+      "description": "Vision of financial freedom and early retirement",
+      "category": "onboarding",
+      "requiresAuth": false
+    },
+    {
+      "path": "/profile",
+      "name": "User Profile",
+      "description": "User profile settings and information",
+      "category": "user",
+      "requiresAuth": true
+    },
+    {
+      "path": "/profile-demo",
+      "name": "Profile Demo",
+      "description": "Demo version of user profile",
+      "category": "user",
+      "requiresAuth": false
+    },
+    {
+      "path": "/messages",
+      "name": "Messages",
+      "description": "User messaging and communication center",
+      "category": "user",
+      "requiresAuth": true
+    },
+    {
+      "path": "/settings",
+      "name": "Settings",
+      "description": "App settings and preferences",
+      "category": "user",
+      "requiresAuth": false
+    },
+    {
+      "path": "/membership",
+      "name": "Membership",
+      "description": "Membership plans and benefits",
+      "category": "business",
+      "requiresAuth": true
+    },
+    {
+      "path": "/my-tribe",
+      "name": "My Tribe",
+      "description": "Manage your tribe and team members",
+      "category": "business",
+      "requiresAuth": true
+    },
+    {
+      "path": "/join-my-tribe",
+      "name": "Join My Tribe",
+      "description": "Join a tribe or team",
+      "category": "business",
+      "requiresAuth": false
+    },
+    {
+      "path": "/ref-join",
+      "name": "Referral Join",
+      "description": "Join through referral link",
+      "category": "business",
+      "requiresAuth": false
+    },
+    {
+      "path": "/overview",
+      "name": "Overview",
+      "description": "Business overview and analytics",
+      "category": "business",
+      "requiresAuth": true
+    },
+    {
+      "path": "/search-deals",
+      "name": "Search Deals",
+      "description": "Search and browse available deals",
+      "category": "shopping",
+      "requiresAuth": false
+    },
+    {
+      "path": "/shop-buy",
+      "name": "Shop & Buy",
+      "description": "Shopping and purchasing interface",
+      "category": "shopping",
+      "requiresAuth": false
+    },
+    {
+      "path": "/dev-dashboard",
+      "name": "Developer Dashboard",
+      "description": "Development tools and debugging interface",
+      "category": "other",
+      "requiresAuth": false
+    },
+    {
+      "path": "/splash-start",
+      "name": "Splash Start",
+      "description": "App startup and splash screen",
+      "category": "other",
+      "requiresAuth": false
+    },
+    {
+      "path": "/rev-opp",
+      "name": "Revenue Opportunity",
+      "description": "Revenue opportunities and monetization",
+      "category": "other",
+      "requiresAuth": false
+    },
+    {
+      "path": "/video-player",
+      "name": "Video Player",
+      "description": "Video content player interface",
+      "category": "other",
+      "requiresAuth": false
+    },
+    {
+      "path": "/appdir",
+      "name": "App Directory",
+      "description": "Navigation directory for all app pages",
+      "category": "other",
+      "requiresAuth": false
+    },
+    {
+      "path": "/vip/:parameter",
+      "name": "VIP Referral Router",
+      "description": "Dynamic VIP referral system with user lookup",
+      "category": "vip",
+      "requiresAuth": false
+    },
+    {
+      "path": "/vip/invite",
+      "name": "VIP Invitation",
+      "description": "Referral invitation page when user is found",
+      "category": "vip",
+      "requiresAuth": false
+    },
+    {
+      "path": "/vip/maint",
+      "name": "VIP Maintenance",
+      "description": "Lead capture when referrer not found",
+      "category": "vip",
+      "requiresAuth": false
+    }
+  ]
+}

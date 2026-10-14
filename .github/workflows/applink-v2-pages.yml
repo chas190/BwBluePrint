@@ -8,6 +8,7 @@ on:
       - 'ifewa_foundation_v2_GPT/**'
       - 'paladin_logistics_v2_GPT/**'
       - 'legacy_stewards_fund_v2_GPT/**'
+      - 'bucksup_tribe_builder_hub_19_v2_GPT/**'
       - '.github/workflows/applink-v2-pages.yml'
   workflow_dispatch:
 permissions:
@@ -50,6 +51,13 @@ jobs:
           npm ci
           npx tsc --noEmit -p tsconfig.app.json
           npm run build
+      - name: Build Bucksup Tribe
+        working-directory: bucksup_tribe_builder_hub_19_v2_GPT
+        run: |
+          npm ci
+          npx tsc --noEmit -p tsconfig.app.json
+          npm run build
+          node scripts/pages-routes.mjs
       - name: Assemble site
         run: |
           mkdir -p pages/applink_dashboard_v2_GPT
@@ -62,7 +70,18 @@ jobs:
           cp -a paladin_logistics_v2_GPT/. pages/paladin_logistics_v2_GPT/
           mkdir -p pages/legacy_stewards_fund_v2_GPT
           cp -a legacy_stewards_fund_v2_GPT/dist/. pages/legacy_stewards_fund_v2_GPT/
+          mkdir -p pages/bucksup_tribe_builder_hub_19_v2_GPT
+          cp -a bucksup_tribe_builder_hub_19_v2_GPT/dist/. pages/bucksup_tribe_builder_hub_19_v2_GPT/
           touch pages/.nojekyll
+          cat > pages/404.html <<'FALLBACK'
+          <!doctype html><html lang="en"><meta charset="utf-8"><title>Page not found</title><script>
+          const base = '/BwBluePrint/bucksup_tribe_builder_hub_19_v2_GPT/';
+          if (location.pathname.startsWith(base)) {
+            const route = location.pathname.slice(base.length) + location.search + location.hash;
+            location.replace(base + '?__route=' + encodeURIComponent(route));
+          }
+          </script><h1>Page not found</h1><a href="/BwBluePrint/">Browse projects</a></html>
+          FALLBACK
           cat > pages/index.html <<'HTML'
           <!doctype html>
           <html lang="en">
@@ -78,6 +97,7 @@ jobs:
           <body>
             <header class="hero"><div class="wrap"><div class="eyebrow">BwBluePrint · V2 Projects</div><h1>Ideas built to move forward.</h1><p>Independent web projects exploring stronger communities, better tools, and lasting local impact.</p></div></header>
             <main class="wrap"><section class="apps" aria-label="Published projects">
+              <article class="card"><h2>BucksUp Tribe</h2><p>Save money, earn rewards, and build your financial future with your tribe.</p><a href="./bucksup_tribe_builder_hub_19_v2_GPT/">Open BucksUp →</a></article>
               <article class="card"><h2>Legacy Stewards Fund</h2><p>Founding Elders, community stewardship, and generational wealth.</p><a href="./legacy_stewards_fund_v2_GPT/">Explore Legacy Stewards →</a></article>
               <article class="card"><h2>Paladin Logistics</h2><p>Transportation, freight, warehousing and logistics services.</p><a href="./paladin_logistics_v2_GPT/">Explore Paladin →</a></article>
               <article class="card"><h2>IFEWA Foundation</h2><p>Fire, Earth, Water, Air, and the individual: protecting plants, animals, children, and our shared world.</p><a href="./ifewa_foundation_v2_GPT/">Explore IFEWA →</a></article>
