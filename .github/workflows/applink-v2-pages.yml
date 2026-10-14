@@ -5,6 +5,7 @@ on:
     paths:
       - 'applink_dashboard_v2_GPT/**'
       - 'uplift_foundation_v2_GPT/**'
+      - 'ifewa_foundation_v2_GPT/**'
       - '.github/workflows/applink-v2-pages.yml'
   workflow_dispatch:
 permissions:
@@ -35,12 +36,20 @@ jobs:
         env:
           BASE_PATH: /BwBluePrint/applink_dashboard_v2_GPT/
         run: npm run build
+      - name: Build IFEWA React site
+        working-directory: ifewa_foundation_v2_GPT
+        run: |
+          npm ci
+          npm run check
+          npm run build
       - name: Assemble site
         run: |
           mkdir -p pages/applink_dashboard_v2_GPT
           mkdir -p pages/uplift_foundation_v2_GPT
           cp -a applink_dashboard_v2_GPT/dist/. pages/applink_dashboard_v2_GPT/
           cp -a uplift_foundation_v2_GPT/. pages/uplift_foundation_v2_GPT/
+          mkdir -p pages/ifewa_foundation_v2_GPT
+          cp -a ifewa_foundation_v2_GPT/dist/. pages/ifewa_foundation_v2_GPT/
           touch pages/.nojekyll
           cat > pages/index.html <<'HTML'
           <!doctype html>
@@ -57,6 +66,7 @@ jobs:
           <body>
             <header class="hero"><div class="wrap"><div class="eyebrow">BwBluePrint · V2 Projects</div><h1>Ideas built to move forward.</h1><p>Independent web projects exploring stronger communities, better tools, and lasting local impact.</p></div></header>
             <main class="wrap"><section class="apps" aria-label="Published projects">
+              <article class="card"><h2>IFEWA Foundation</h2><p>Fire, Earth, Water, Air, and the individual: protecting plants, animals, children, and our shared world.</p><a href="./ifewa_foundation_v2_GPT/">Explore IFEWA →</a></article>
               <article class="card"><h2>Uplift Foundation</h2><p>Connect community priorities with investment strategy, project oversight, and lasting local benefit.</p><a href="./uplift_foundation_v2_GPT/">Explore Uplift →</a></article>
               <article class="card"><h2>AppLink Dashboard</h2><p>Open the AppLink V2 dashboard and its project tools.</p><a href="./applink_dashboard_v2_GPT/">Open AppLink →</a></article>
             </section></main>

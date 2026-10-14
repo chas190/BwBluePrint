@@ -22,3 +22,9 @@ Published projects:
 - AppLink Dashboard: `https://chas190.github.io/BwBluePrint/applink_dashboard_v2_GPT/`
 
 The GitHub Actions workflow builds AppLink, assembles both deployed project paths, and publishes them together.
+
+## IFEWA Foundation V2
+
+`ifewa_foundation_v2_GPT/` contains the React rebuild of IFEWA, with original imagery, working hash navigation, mission, service, team, contact, shopping inquiries, and action pages.
+
+Published path: `https://chas190.github.io/BwBluePrint/ifewa_foundation_v2_GPT/`. The shared Pages workflow builds and deploys IFEWA alongside AppLink and Uplift.
