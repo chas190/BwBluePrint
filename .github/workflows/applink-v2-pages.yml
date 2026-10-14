@@ -7,6 +7,7 @@ on:
       - 'uplift_foundation_v2_GPT/**'
       - 'ifewa_foundation_v2_GPT/**'
       - 'paladin_logistics_v2_GPT/**'
+      - 'legacy_stewards_fund_v2_GPT/**'
       - '.github/workflows/applink-v2-pages.yml'
   workflow_dispatch:
 permissions:
@@ -43,6 +44,12 @@ jobs:
           npm ci
           npm run check
           npm run build
+      - name: Build Legacy Stewards Fund
+        working-directory: legacy_stewards_fund_v2_GPT
+        run: |
+          npm ci
+          npx tsc --noEmit -p tsconfig.app.json
+          npm run build
       - name: Assemble site
         run: |
           mkdir -p pages/applink_dashboard_v2_GPT
@@ -53,6 +60,8 @@ jobs:
           cp -a ifewa_foundation_v2_GPT/dist/. pages/ifewa_foundation_v2_GPT/
           mkdir -p pages/paladin_logistics_v2_GPT
           cp -a paladin_logistics_v2_GPT/. pages/paladin_logistics_v2_GPT/
+          mkdir -p pages/legacy_stewards_fund_v2_GPT
+          cp -a legacy_stewards_fund_v2_GPT/dist/. pages/legacy_stewards_fund_v2_GPT/
           touch pages/.nojekyll
           cat > pages/index.html <<'HTML'
           <!doctype html>
@@ -69,6 +78,7 @@ jobs:
           <body>
             <header class="hero"><div class="wrap"><div class="eyebrow">BwBluePrint · V2 Projects</div><h1>Ideas built to move forward.</h1><p>Independent web projects exploring stronger communities, better tools, and lasting local impact.</p></div></header>
             <main class="wrap"><section class="apps" aria-label="Published projects">
+              <article class="card"><h2>Legacy Stewards Fund</h2><p>Founding Elders, community stewardship, and generational wealth.</p><a href="./legacy_stewards_fund_v2_GPT/">Explore Legacy Stewards →</a></article>
               <article class="card"><h2>Paladin Logistics</h2><p>Transportation, freight, warehousing and logistics services.</p><a href="./paladin_logistics_v2_GPT/">Explore Paladin →</a></article>
               <article class="card"><h2>IFEWA Foundation</h2><p>Fire, Earth, Water, Air, and the individual: protecting plants, animals, children, and our shared world.</p><a href="./ifewa_foundation_v2_GPT/">Explore IFEWA →</a></article>
               <article class="card"><h2>Uplift Foundation</h2><p>Connect community priorities with investment strategy, project oversight, and lasting local benefit.</p><a href="./uplift_foundation_v2_GPT/">Explore Uplift →</a></article>
