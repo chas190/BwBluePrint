@@ -1,4 +1,4 @@
-const CACHE='brighton-community-pages-v2';
+const CACHE='brighton-community-pages-v3';
 const BASE=new URL('./',self.location.href);
 const FILES=['./','index.html','town.html','legacy.html','profile.html','app.js','town.js','drawer.js','bottom-nav.js','town.css','manifest.webmanifest','assets/logo.png','assets/brighton-hero.webp','assets/icon-192.png','assets/icon-512.png'];
 self.addEventListener('install',e=>{e.waitUntil(caches.open(CACHE).then(c=>c.addAll(FILES.map(p=>new URL(p,BASE).href))));self.skipWaiting()});
