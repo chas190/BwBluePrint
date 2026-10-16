@@ -19,3 +19,5 @@ Official names are attributed to the Brighton city staff directory; unverified c
 - `upbank.html`: proposed VIP membership, value calculator, and official grant/loan/credit-union resource links checked October 16, 2026.
 
 No real product offers, delivery services, mentorship matches, or financial services are activated. Drafts and planning lists stay on the current device. External financial providers are not represented as confirmed partners.
+
+UpSports visual refresh: reference-led coaching hero, Birmingham Reign strip, photo story previews, mentoring/support/story actions, orange community banner, expanded team details, school spotlights, and nomination draft. New photographs are AI-generated concept scenes.
