@@ -28,3 +28,11 @@ The GitHub Actions workflow builds AppLink, assembles both deployed project path
 `ifewa_foundation_v2_GPT/` contains the React rebuild of IFEWA, with original imagery, working hash navigation, mission, service, team, contact, shopping inquiries, and action pages.
 
 Published path: `https://chas190.github.io/BwBluePrint/ifewa_foundation_v2_GPT/`. The shared Pages workflow builds and deploys IFEWA alongside AppLink and Uplift.
+
+## Brighton Community V2
+
+`brighton_community_v2_GPT/` contains the mobile-first Brighton community PWA, town leadership and legacy partner pages, individual profile previews, and right-side town menu.
+
+Published path: https://chas190.github.io/BwBluePrint/brighton_community_v2_GPT/
+
+The shared Pages workflow publishes Brighton alongside the existing V2 sites. Resident notes and profile edits remain local to each browser.

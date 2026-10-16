@@ -9,6 +9,7 @@ on:
       - 'paladin_logistics_v2_GPT/**'
       - 'legacy_stewards_fund_v2_GPT/**'
       - 'bucksup_tribe_builder_hub_19_v2_GPT/**'
+      - 'brighton_community_v2_GPT/**'
       - '.github/workflows/applink-v2-pages.yml'
   workflow_dispatch:
 permissions:
@@ -72,6 +73,8 @@ jobs:
           cp -a legacy_stewards_fund_v2_GPT/dist/. pages/legacy_stewards_fund_v2_GPT/
           mkdir -p pages/bucksup_tribe_builder_hub_19_v2_GPT
           cp -a bucksup_tribe_builder_hub_19_v2_GPT/dist/. pages/bucksup_tribe_builder_hub_19_v2_GPT/
+          mkdir -p pages/brighton_community_v2_GPT
+          cp -a brighton_community_v2_GPT/. pages/brighton_community_v2_GPT/
           touch pages/.nojekyll
           cat > pages/404.html <<'FALLBACK'
           <!doctype html><html lang="en"><meta charset="utf-8"><title>Page not found</title><script>
@@ -97,6 +100,7 @@ jobs:
           <body>
             <header class="hero"><div class="wrap"><div class="eyebrow">BwBluePrint · V2 Projects</div><h1>Ideas built to move forward.</h1><p>Independent web projects exploring stronger communities, better tools, and lasting local impact.</p></div></header>
             <main class="wrap"><section class="apps" aria-label="Published projects">
+              <article class="card"><h2>A Brighter Brighton</h2><p>Meet your town, explore community projects, and connect with local leadership and legacy partners.</p><a href="./brighton_community_v2_GPT/">Explore Brighton →</a></article>
               <article class="card"><h2>BucksUp Tribe</h2><p>Save money, earn rewards, and build your financial future with your tribe.</p><a href="./bucksup_tribe_builder_hub_19_v2_GPT/">Open BucksUp →</a></article>
               <article class="card"><h2>Legacy Stewards Fund</h2><p>Founding Elders, community stewardship, and generational wealth.</p><a href="./legacy_stewards_fund_v2_GPT/">Explore Legacy Stewards →</a></article>
               <article class="card"><h2>Paladin Logistics</h2><p>Transportation, freight, warehousing and logistics services.</p><a href="./paladin_logistics_v2_GPT/">Explore Paladin →</a></article>

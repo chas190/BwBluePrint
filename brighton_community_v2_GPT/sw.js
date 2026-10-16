@@ -1,0 +1,6 @@
+const CACHE='brighton-community-pages-v1';
+const BASE=new URL('./',self.location.href);
+const FILES=['./','index.html','town.html','legacy.html','profile.html','app.js','town.js','drawer.js','town.css','manifest.webmanifest','assets/logo.png','assets/brighton-hero.webp','assets/icon-192.png','assets/icon-512.png'];
+self.addEventListener('install',e=>{e.waitUntil(caches.open(CACHE).then(c=>c.addAll(FILES.map(p=>new URL(p,BASE).href))));self.skipWaiting()});
+self.addEventListener('activate',e=>{e.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k.startsWith('brighton-community-pages-')&&k!==CACHE).map(k=>caches.delete(k)))));self.clients.claim()});
+self.addEventListener('fetch',e=>{const url=new URL(e.request.url);if(e.request.method!=='GET'||url.origin!==BASE.origin||!url.pathname.startsWith(BASE.pathname))return;e.respondWith(fetch(e.request).then(r=>{if(r.ok&&r.type==='basic'){const copy=r.clone();caches.open(CACHE).then(c=>c.put(e.request,copy))}return r}).catch(async()=>{const cached=await caches.match(e.request)||await caches.match(url.origin+url.pathname);if(cached)return cached;if(e.request.mode==='navigate')return await caches.match(new URL('index.html',BASE).href)||Response.error();return Response.error()}))});

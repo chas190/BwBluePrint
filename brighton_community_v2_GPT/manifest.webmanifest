@@ -1,0 +1,25 @@
+{
+  "id": "./",
+  "name": "BwTown \u2014 A Brighter Brighton",
+  "short_name": "Brighton",
+  "description": "Your community, connected. A proposed BwTown partnership for Brighton, Alabama.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f7f5ee",
+  "theme_color": "#122f40",
+  "icons": [
+    {
+      "src": "assets/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
