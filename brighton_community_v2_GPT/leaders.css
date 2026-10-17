@@ -7,3 +7,11 @@
 @media(min-width:900px) and (max-width:1279px){.leader-card-inner{min-height:96px}}
 @media(max-width:899px){.town-leader-card{min-height:116px}.leader-card-inner{min-height:96px}}
 @media(max-width:599px){.town-leader-card{padding-top:8px;padding-bottom:8px;min-height:116px}.leader-card-inner{min-height:96px}.leader-read{padding-top:3.5px;padding-bottom:3.5px}}
+/* Tighter name/title/action rhythm; bring the gallery toward the left edge. */
+.town-leader-card{padding-top:4px;padding-bottom:3px}.leader-card-inner{min-height:88px;gap:10px}.leader-card-text h3{margin-top:0;margin-bottom:1px;line-height:1.1}.leader-card-text p{margin-top:0;margin-bottom:3px;line-height:1.2}.leader-read{margin-top:0;margin-bottom:0;line-height:1.05}.town-leader-grid{position:relative;left:-25px}
+@media(min-width:900px) and (max-width:1279px){.leader-card-inner{min-height:88px}}
+@media(max-width:899px){.leader-gallery{padding-left:0;scroll-padding-left:0;padding-bottom:8px}.town-leader-grid{left:0}.town-leader-card{min-height:99px;padding-top:4px;padding-bottom:3px}.leader-card-inner{min-height:88px}.leader-avatar{height:82px;flex-basis:70px;width:70px}}
+@media(max-width:599px){.leader-gallery{padding-left:0;scroll-padding-left:0}.town-leader-card{min-height:99px;padding-top:4px;padding-bottom:3px}.leader-card-inner{min-height:88px}.leader-avatar{height:82px;flex-basis:70px;width:70px}.leader-card-text h3{margin-bottom:1px}.leader-card-text p{margin-bottom:3px}}
+.town-leader-card .leader-card-text{align-self:flex-end;padding-bottom:0}
+@media(max-width:899px){.town-leader-grid{grid-auto-columns:calc((100vw - 32px)/2.2)}.town-leader-card{width:calc((100vw - 32px)/2.2)}}
+@media(max-width:599px){.town-leader-grid{grid-auto-columns:calc((100vw - 16px)/1.2)}.town-leader-card{width:calc((100vw - 16px)/1.2)}}
