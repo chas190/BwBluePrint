@@ -15,3 +15,7 @@
 .town-leader-card .leader-card-text{align-self:flex-end;padding-bottom:0}
 @media(max-width:899px){.town-leader-grid{grid-auto-columns:calc((100vw - 32px)/2.2)}.town-leader-card{width:calc((100vw - 32px)/2.2)}}
 @media(max-width:599px){.town-leader-grid{grid-auto-columns:calc((100vw - 16px)/1.2)}.town-leader-card{width:calc((100vw - 16px)/1.2)}}
+/* Give portraits 10px of vertical breathing room and center the action. */
+.town-leader-card{padding-top:10px;padding-bottom:10px}.town-leader-card .leader-card-inner{min-height:0;align-items:center}.town-leader-card .leader-card-text{align-self:center}.town-leader-card .leader-read{margin-left:auto;margin-right:auto}
+@media(max-width:899px){.town-leader-card{padding-top:10px;padding-bottom:10px;min-height:0}}
+@media(max-width:599px){.town-leader-card{padding-top:10px;padding-bottom:10px;min-height:0}}
