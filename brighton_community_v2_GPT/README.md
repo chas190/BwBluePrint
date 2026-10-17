@@ -21,3 +21,5 @@ Official names are attributed to the Brighton city staff directory; unverified c
 No real product offers, delivery services, mentorship matches, or financial services are activated. Drafts and planning lists stay on the current device. External financial providers are not represented as confirmed partners.
 
 UpSports visual refresh: reference-led coaching hero, Birmingham Reign strip, photo story previews, mentoring/support/story actions, orange community banner, expanded team details, school spotlights, and nomination draft. New photographs are AI-generated concept scenes.
+
+Town Leaders: homepage 4×2 desktop, optional ninth card in 3×3 medium layouts, and a two-row horizontal gallery exposing 2.2 columns on tablets and 1.2 on phones. Order stays row-major (mayor first; second card on the top row to the right). Cards open intro and vision dialog states, both linked to existing professional profiles. The mayor identity is corrected to Joseph Edwards Sr.; other new named civic/community profiles are explicitly fictional samples.
