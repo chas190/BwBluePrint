@@ -19,3 +19,5 @@
 .town-leader-card{padding-top:10px;padding-bottom:10px}.town-leader-card .leader-card-inner{min-height:0;align-items:center}.town-leader-card .leader-card-text{align-self:center}.town-leader-card .leader-read{margin-left:auto;margin-right:auto}
 @media(max-width:899px){.town-leader-card{padding-top:10px;padding-bottom:10px;min-height:0}}
 @media(max-width:599px){.town-leader-card{padding-top:10px;padding-bottom:10px;min-height:0}}
+/* Keep a 5px gap between the role line and centered action. */
+.town-leader-card .leader-card-text p{margin-bottom:5px}
