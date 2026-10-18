@@ -16,3 +16,7 @@
 .reign-team-logo{display:block;flex-shrink:0;width:100px;height:auto;max-height:110px;object-fit:contain;position:relative;z-index:1}
 @media(max-width:759px){.reign-team-logo{width:68px;max-height:76px}}
 @media(max-width:380px){.reign-team-logo{width:56px;max-height:64px}}
+
+.upsports-image-wordmark{display:block;flex-shrink:0;width:170px;line-height:0;letter-spacing:normal}.upsports-image-wordmark:after{display:none}.upsports-image-wordmark img{display:block;width:100%;height:auto;mix-blend-mode:multiply}
+@media(max-width:759px){.upsports-image-wordmark{width:140px}.sports-brand-row{gap:16px}}
+@media(max-width:380px){.upsports-image-wordmark{width:120px}.sports-brand-row{gap:12px}.sports-brand-row>span{letter-spacing:.6px}}
