@@ -12,3 +12,7 @@
 .community-hero-panel p{font-size:16px;margin:0 0 20px;max-width:560px}
 @media(min-width:1000px){.community-hero-panel{position:absolute;left:24px;top:24px;max-width:330px;border-radius:13px;background:#071d35ed;padding:24px}.community-hero-panel h2{font-size:36px}.community-hero-panel p{font-size:14px}}
 @media(max-width:759px){.community-hero{margin-top:14px}.community-hero-panel{padding:23px 20px}.community-hero-panel p{font-size:13px}.community-hero-panel .sports-kicker{font-size:8px}}
+
+.reign-team-logo{display:block;flex-shrink:0;width:100px;height:auto;max-height:110px;object-fit:contain;position:relative;z-index:1}
+@media(max-width:759px){.reign-team-logo{width:68px;max-height:76px}}
+@media(max-width:380px){.reign-team-logo{width:56px;max-height:64px}}
