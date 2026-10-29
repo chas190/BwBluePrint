@@ -1,0 +1,25 @@
+kind = "mobile"
+previewPath = "/"
+title = "Stage This"
+description = "A mobile-first staging project manager for organizing properties, scheduling staging work, coordinating teams, and keeping every room and task ready for market."
+version = "1.0.0"
+id = "artifacts/stage-this"
+router = "expo-domain"
+
+[[services]]
+name = "expo"
+ensurePreviewReachable = "/status"
+paths = [ "/" ]
+localPort = 23152
+
+[services.development]
+run = "pnpm --filter @workspace/stage-this run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/stage-this", "run", "build" ]
+run = [ "pnpm", "--filter", "@workspace/stage-this", "run", "serve" ]
+
+[services.env]
+PORT = "23152"
+BASE_PATH = "/"
+

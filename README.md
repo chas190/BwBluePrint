@@ -36,3 +36,11 @@ Published path: `https://chas190.github.io/BwBluePrint/ifewa_foundation_v2_GPT/`
 Published path: https://chas190.github.io/BwBluePrint/brighton_community_v2_GPT/
 
 The shared Pages workflow publishes Brighton alongside the existing V2 sites. Resident notes and profile edits remain local to each browser.
+
+## Stage This V2
+
+`stage_this_v2_GPT/` is the independent Expo web copy of `chas190/Stage-This` (source tree `70f9b6297e41615798467278f0b3d7f0dac796ac`).
+
+Published path: https://chas190.github.io/BwBluePrint/stage_this_v2_GPT/
+
+The shared Pages workflow builds and deploys it with the existing projects. Property and checklist data stays in each browser.

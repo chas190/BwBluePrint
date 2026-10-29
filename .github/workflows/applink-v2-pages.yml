@@ -10,6 +10,7 @@ on:
       - 'legacy_stewards_fund_v2_GPT/**'
       - 'bucksup_tribe_builder_hub_19_v2_GPT/**'
       - 'brighton_community_v2_GPT/**'
+      - 'stage_this_v2_GPT/**'
       - '.github/workflows/applink-v2-pages.yml'
   workflow_dispatch:
 permissions:
@@ -59,6 +60,15 @@ jobs:
           npx tsc --noEmit -p tsconfig.app.json
           npm run build
           node scripts/pages-routes.mjs
+      - name: Build Stage This
+        working-directory: stage_this_v2_GPT
+        env:
+          CI: true
+          EXPO_NO_TELEMETRY: 1
+        run: |
+          npm ci
+          npm run typecheck
+          npm run build
       - name: Assemble site
         run: |
           mkdir -p pages/applink_dashboard_v2_GPT
@@ -75,9 +85,16 @@ jobs:
           cp -a bucksup_tribe_builder_hub_19_v2_GPT/dist/. pages/bucksup_tribe_builder_hub_19_v2_GPT/
           mkdir -p pages/brighton_community_v2_GPT
           cp -a brighton_community_v2_GPT/. pages/brighton_community_v2_GPT/
+          mkdir -p pages/stage_this_v2_GPT
+          cp -a stage_this_v2_GPT/dist/. pages/stage_this_v2_GPT/
           touch pages/.nojekyll
           cat > pages/404.html <<'FALLBACK'
           <!doctype html><html lang="en"><meta charset="utf-8"><title>Page not found</title><script>
+          const stageBase = '/BwBluePrint/stage_this_v2_GPT/';
+          if (location.pathname.startsWith(stageBase)) {
+            const route = location.pathname.slice(stageBase.length) + location.search + location.hash;
+            location.replace(stageBase + '?__route=' + encodeURIComponent(route));
+          }
           const base = '/BwBluePrint/bucksup_tribe_builder_hub_19_v2_GPT/';
           if (location.pathname.startsWith(base)) {
             const route = location.pathname.slice(base.length) + location.search + location.hash;
@@ -100,6 +117,7 @@ jobs:
           <body>
             <header class="hero"><div class="wrap"><div class="eyebrow">BwBluePrint · V2 Projects</div><h1>Ideas built to move forward.</h1><p>Independent web projects exploring stronger communities, better tools, and lasting local impact.</p></div></header>
             <main class="wrap"><section class="apps" aria-label="Published projects">
+              <article class="card"><h2>Stage This</h2><p>Manage staging properties, weekly schedules, rooms, and project checklists.</p><a href="./stage_this_v2_GPT/">Open Stage This →</a></article>
               <article class="card"><h2>A Brighter Brighton</h2><p>Meet your town, explore community projects, and connect with local leadership and legacy partners.</p><a href="./brighton_community_v2_GPT/">Explore Brighton →</a></article>
               <article class="card"><h2>BucksUp Tribe</h2><p>Save money, earn rewards, and build your financial future with your tribe.</p><a href="./bucksup_tribe_builder_hub_19_v2_GPT/">Open BucksUp →</a></article>
               <article class="card"><h2>Legacy Stewards Fund</h2><p>Founding Elders, community stewardship, and generational wealth.</p><a href="./legacy_stewards_fund_v2_GPT/">Explore Legacy Stewards →</a></article>
