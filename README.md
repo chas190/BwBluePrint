@@ -44,3 +44,12 @@ The shared Pages workflow publishes Brighton alongside the existing V2 sites. Re
 Published path: https://chas190.github.io/BwBluePrint/stage_this_v2_GPT/
 
 The shared Pages workflow builds and deploys it with the existing projects. Property and checklist data stays in each browser.
+
+
+## Stage This Home Setup React V2
+
+`stage_this_home_setup_v2_GPT/` contains the React home setup catalog converted from the standalone Stage This setup app. It includes the sample product catalog, editable ASIN and image fields, Excel/CSV import, selected package reporting, Amazon integration guidance, and a browser-session audio workspace.
+
+Published path: https://chas190.github.io/BwBluePrint/stage_this_home_setup_v2_GPT/
+
+Amazon live prices and product images require an approved Amazon data source and a secure server integration. The current app displays its documented price references and generated Associates-tagged search links.

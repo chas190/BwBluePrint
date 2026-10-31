@@ -1,0 +1,602 @@
+[
+  {
+    "category": "Cookware",
+    "name": "10-piece tri-ply stainless cookware",
+    "brand": "Tramontina Signature",
+    "qty": 1,
+    "price": 272.0,
+    "evidence": "Recent Amazon price 10/25/26",
+    "url": "https://www.amazon.com/s?k=Tramontina+Signature+Tri+Ply+Clad+10+piece",
+    "note": "Stainless / induction compatible"
+  },
+  {
+    "category": "Cookware",
+    "name": "7-piece knife block",
+    "brand": "ZWILLING Twin Signature",
+    "qty": 1,
+    "price": 259.99,
+    "evidence": "Other retailer observed",
+    "url": "https://www.amazon.com/s?k=Zwilling+Twin+Signature+7+piece+knife+block",
+    "note": "Black handles / natural block"
+  },
+  {
+    "category": "Cookware",
+    "name": "10-inch nonstick skillet",
+    "brand": "OXO Professional",
+    "qty": 1,
+    "price": 55.0,
+    "evidence": "Budget estimate",
+    "url": "https://www.amazon.com/s?k=OXO%20Professional%2010-inch%20nonstick%20skillet",
+    "note": "Black / stainless"
+  },
+  {
+    "category": "Cookware",
+    "name": "12-inch cast iron skillet",
+    "brand": "Lodge",
+    "qty": 1,
+    "price": 35.0,
+    "evidence": "Budget estimate",
+    "url": "https://www.amazon.com/s?k=Lodge%2012-inch%20cast%20iron%20skillet",
+    "note": "Matte black"
+  },
+  {
+    "category": "Cookware",
+    "name": "Half-sheet baking pan",
+    "brand": "Nordic Ware Naturals",
+    "qty": 2,
+    "price": 14.97,
+    "evidence": "Other retailer observed",
+    "url": "https://www.amazon.com/s?k=Nordic%20Ware%20Naturals%20Half-sheet%20baking%20pan",
+    "note": "Natural aluminum"
+  },
+  {
+    "category": "Cookware",
+    "name": "9x13 baking dish",
+    "brand": "Pyrex",
+    "qty": 1,
+    "price": 24.0,
+    "evidence": "Budget estimate",
+    "url": "https://www.amazon.com/s?k=Pyrex%209x13%20baking%20dish",
+    "note": "Clear glass"
+  },
+  {
+    "category": "Cookware",
+    "name": "Loaf pan",
+    "brand": "USA Pan",
+    "qty": 1,
+    "price": 22.0,
+    "evidence": "Budget estimate",
+    "url": "https://www.amazon.com/s?k=USA%20Pan%20Loaf%20pan",
+    "note": "Aluminized steel"
+  },
+  {
+    "category": "Prep tools",
+    "name": "Utensil set silicone/stainless",
+    "brand": "OXO Good Grips",
+    "qty": 1,
+    "price": 80.0,
+    "evidence": "Budget estimate",
+    "url": "https://www.amazon.com/s?k=OXO%20Good%20Grips%20Utensil%20set%20silicone/stainless",
+    "note": "Black / stainless"
+  },
+  {
+    "category": "Prep tools",
+    "name": "Mixing bowls nesting",
+    "brand": "OXO Good Grips",
+    "qty": 1,
+    "price": 50.0,
+    "evidence": "Budget estimate",
+    "url": "https://www.amazon.com/s?k=OXO%20Good%20Grips%20Mixing%20bowls%20nesting",
+    "note": "Stainless"
+  },
+  {
+    "category": "Prep tools",
+    "name": "Cutting boards 3-piece",
+    "brand": "OXO Good Grips",
+    "qty": 1,
+    "price": 35.0,
+    "evidence": "Budget estimate",
+    "url": "https://www.amazon.com/s?k=OXO%20Good%20Grips%20Cutting%20boards%203-piece",
+    "note": "Neutral"
+  },
+  {
+    "category": "Prep tools",
+    "name": "Colander",
+    "brand": "OXO Good Grips",
+    "qty": 1,
+    "price": 25.0,
+    "evidence": "Budget estimate",
+    "url": "https://www.amazon.com/s?k=OXO%20Good%20Grips%20Colander",
+    "note": "Stainless"
+  },
+  {
+    "category": "Prep tools",
+    "name": "Measuring cups and spoons",
+    "brand": "OXO Good Grips",
+    "qty": 1,
+    "price": 30.0,
+    "evidence": "Budget estimate",
+    "url": "https://www.amazon.com/s?k=OXO%20Good%20Grips%20Measuring%20cups%20and%20spoons",
+    "note": "Stainless"
+  },
+  {
+    "category": "Prep tools",
+    "name": "Grater",
+    "brand": "Microplane",
+    "qty": 1,
+    "price": 20.0,
+    "evidence": "Budget estimate",
+    "url": "https://www.amazon.com/s?k=Microplane%20Grater",
+    "note": "Black"
+  },
+  {
+    "category": "Prep tools",
+    "name": "Manual can opener",
+    "brand": "OXO Good Grips",
+    "qty": 1,
+    "price": 20.0,
+    "evidence": "Budget estimate",
+    "url": "https://www.amazon.com/s?k=OXO%20Good%20Grips%20Manual%20can%20opener",
+    "note": "Black"
+  },
+  {
+    "category": "Prep tools",
+    "name": "Bottle opener / corkscrew",
+    "brand": "OXO",
+    "qty": 1,
+    "price": 22.0,
+    "evidence": "Budget estimate",
+    "url": "https://www.amazon.com/s?k=OXO%20Bottle%20opener%20/%20corkscrew",
+    "note": "Black"
+  },
+  {
+    "category": "Prep tools",
+    "name": "Pizza wheel",
+    "brand": "OXO Good Grips",
+    "qty": 1,
+    "price": 16.0,
+    "evidence": "Budget estimate",
+    "url": "https://www.amazon.com/s?k=OXO%20Good%20Grips%20Pizza%20wheel",
+    "note": "Black"
+  },
+  {
+    "category": "Dining",
+    "name": "18-piece service for 6 dinnerware",
+    "brand": "Corelle Winter Frost White",
+    "qty": 2,
+    "price": 69.99,
+    "evidence": "Official retailer observed",
+    "url": "https://www.amazon.com/dp/B00R790CLY",
+    "note": "12 place settings, white"
+  },
+  {
+    "category": "Dining",
+    "name": "20-piece flatware service for 4",
+    "brand": "Oneida Mooncrest",
+    "qty": 3,
+    "price": 55.0,
+    "evidence": "Budget estimate",
+    "url": "https://www.amazon.com/s?k=Oneida%20Mooncrest%2020-piece%20flatware%20service%20for%204",
+    "note": "Brushed stainless; 12 settings"
+  },
+  {
+    "category": "Dining",
+    "name": "Drinking glasses 12-piece",
+    "brand": "Libbey",
+    "qty": 1,
+    "price": 48.0,
+    "evidence": "Budget estimate",
+    "url": "https://www.amazon.com/s?k=Libbey%20Drinking%20glasses%2012-piece",
+    "note": "Clear glass"
+  },
+  {
+    "category": "Dining",
+    "name": "Wine glasses 8-piece",
+    "brand": "Libbey",
+    "qty": 1,
+    "price": 48.0,
+    "evidence": "Budget estimate",
+    "url": "https://www.amazon.com/s?k=Libbey%20Wine%20glasses%208-piece",
+    "note": "Clear stemware"
+  },
+  {
+    "category": "Dining",
+    "name": "Coffee mugs 12-piece",
+    "brand": "Sweese",
+    "qty": 1,
+    "price": 55.0,
+    "evidence": "Budget estimate",
+    "url": "https://www.amazon.com/s?k=Sweese%20Coffee%20mugs%2012-piece",
+    "note": "White ceramic"
+  },
+  {
+    "category": "Dining",
+    "name": "Serving platter set",
+    "brand": "Dowan",
+    "qty": 1,
+    "price": 55.0,
+    "evidence": "Budget estimate",
+    "url": "https://www.amazon.com/s?k=Dowan%20Serving%20platter%20set",
+    "note": "White ceramic"
+  },
+  {
+    "category": "Dining",
+    "name": "Serving bowls set",
+    "brand": "Dowan",
+    "qty": 1,
+    "price": 45.0,
+    "evidence": "Budget estimate",
+    "url": "https://www.amazon.com/s?k=Dowan%20Serving%20bowls%20set",
+    "note": "White ceramic"
+  },
+  {
+    "category": "Dining",
+    "name": "Linen-look placemats 8",
+    "brand": "DII",
+    "qty": 1,
+    "price": 40.0,
+    "evidence": "Budget estimate",
+    "url": "https://www.amazon.com/s?k=DII%20Linen-look%20placemats%208",
+    "note": "Natural oatmeal"
+  },
+  {
+    "category": "Dining",
+    "name": "Cloth napkins 12",
+    "brand": "DII",
+    "qty": 1,
+    "price": 36.0,
+    "evidence": "Budget estimate",
+    "url": "https://www.amazon.com/s?k=DII%20Cloth%20napkins%2012",
+    "note": "Natural oatmeal"
+  },
+  {
+    "category": "Storage",
+    "name": "20-piece airtight leftover set",
+    "brand": "Rubbermaid Brilliance",
+    "qty": 1,
+    "price": 47.98,
+    "evidence": "Other retailer observed",
+    "url": "https://www.amazon.com/s?k=Rubbermaid%20Brilliance%2020-piece%20airtight%20leftover%20set",
+    "note": "Clear"
+  },
+  {
+    "category": "Storage",
+    "name": "Dry pantry container set",
+    "brand": "OXO POP",
+    "qty": 1,
+    "price": 110.0,
+    "evidence": "Budget estimate",
+    "url": "https://www.amazon.com/s?k=OXO%20POP%20Dry%20pantry%20container%20set",
+    "note": "Clear / white lids"
+  },
+  {
+    "category": "Storage",
+    "name": "Glass meal-prep containers",
+    "brand": "Rubbermaid Brilliance Glass",
+    "qty": 1,
+    "price": 75.0,
+    "evidence": "Budget estimate",
+    "url": "https://www.amazon.com/s?k=Rubbermaid%20Brilliance%20Glass%20Glass%20meal-prep%20containers",
+    "note": "Clear"
+  },
+  {
+    "category": "Storage",
+    "name": "Reusable freezer bags set",
+    "brand": "Stasher",
+    "qty": 1,
+    "price": 50.0,
+    "evidence": "Budget estimate",
+    "url": "https://www.amazon.com/s?k=Stasher%20Reusable%20freezer%20bags%20set",
+    "note": "Clear"
+  },
+  {
+    "category": "Storage",
+    "name": "Fridge bins set",
+    "brand": "iDesign",
+    "qty": 1,
+    "price": 55.0,
+    "evidence": "Budget estimate",
+    "url": "https://www.amazon.com/s?k=iDesign%20Fridge%20bins%20set",
+    "note": "Clear"
+  },
+  {
+    "category": "Pantry",
+    "name": "Extra virgin olive oil 1L",
+    "brand": "California Olive Ranch",
+    "qty": 1,
+    "price": 22.0,
+    "evidence": "Budget estimate",
+    "url": "https://www.amazon.com/s?k=California%20Olive%20Ranch%20Extra%20virgin%20olive%20oil%201L",
+    "note": "Pantry starter"
+  },
+  {
+    "category": "Pantry",
+    "name": "Salt / pepper grinders",
+    "brand": "McCormick",
+    "qty": 1,
+    "price": 16.0,
+    "evidence": "Budget estimate",
+    "url": "https://www.amazon.com/s?k=McCormick%20Salt%20/%20pepper%20grinders",
+    "note": "Pantry starter"
+  },
+  {
+    "category": "Pantry",
+    "name": "Essential spice assortment",
+    "brand": "McCormick Gourmet",
+    "qty": 1,
+    "price": 65.0,
+    "evidence": "Budget estimate",
+    "url": "https://www.amazon.com/s?k=McCormick%20Gourmet%20Essential%20spice%20assortment",
+    "note": "Pantry starter"
+  },
+  {
+    "category": "Pantry",
+    "name": "Vinegar assortment",
+    "brand": "Bragg / Pompeian",
+    "qty": 1,
+    "price": 22.0,
+    "evidence": "Budget estimate",
+    "url": "https://www.amazon.com/s?k=Bragg%20/%20Pompeian%20Vinegar%20assortment",
+    "note": "Pantry starter"
+  },
+  {
+    "category": "Pantry",
+    "name": "Flour / sugar / rice / pasta",
+    "brand": "King Arthur / Lundberg / Barilla",
+    "qty": 1,
+    "price": 55.0,
+    "evidence": "Budget estimate",
+    "url": "https://www.amazon.com/s?k=King%20Arthur%20/%20Lundberg%20/%20Barilla%20Flour%20/%20sugar%20/%20rice%20/%20pasta",
+    "note": "Pantry starter"
+  },
+  {
+    "category": "Pantry",
+    "name": "Condiments assortment",
+    "brand": "Heinz / French’s / Kikkoman",
+    "qty": 1,
+    "price": 38.0,
+    "evidence": "Budget estimate",
+    "url": "https://www.amazon.com/s?k=Heinz%20/%20French%E2%80%99s%20/%20Kikkoman%20Condiments%20assortment",
+    "note": "Pantry starter"
+  },
+  {
+    "category": "Groceries",
+    "name": "Dairy / eggs / butter starter",
+    "brand": "Local grocery",
+    "qty": 1,
+    "price": 35.0,
+    "evidence": "Budget estimate",
+    "url": "https://www.amazon.com/s?k=Local%20grocery%20Dairy%20/%20eggs%20/%20butter%20starter",
+    "note": "Refrigerated; buy near move-in"
+  },
+  {
+    "category": "Groceries",
+    "name": "Fresh produce and salad",
+    "brand": "Local grocery",
+    "qty": 1,
+    "price": 65.0,
+    "evidence": "Budget estimate",
+    "url": "https://www.amazon.com/s?k=Local%20grocery%20Fresh%20produce%20and%20salad",
+    "note": "Refrigerated; buy near move-in"
+  },
+  {
+    "category": "Groceries",
+    "name": "Proteins for first week",
+    "brand": "Local grocery",
+    "qty": 1,
+    "price": 95.0,
+    "evidence": "Budget estimate",
+    "url": "https://www.amazon.com/s?k=Local%20grocery%20Proteins%20for%20first%20week",
+    "note": "Confirm dietary restrictions"
+  },
+  {
+    "category": "Groceries",
+    "name": "Milk / beverages / sparkling water",
+    "brand": "Local grocery",
+    "qty": 1,
+    "price": 45.0,
+    "evidence": "Budget estimate",
+    "url": "https://www.amazon.com/s?k=Local%20grocery%20Milk%20/%20beverages%20/%20sparkling%20water",
+    "note": "Confirm preferences"
+  },
+  {
+    "category": "Groceries",
+    "name": "Bread / breakfast / snacks",
+    "brand": "Local grocery",
+    "qty": 1,
+    "price": 55.0,
+    "evidence": "Budget estimate",
+    "url": "https://www.amazon.com/s?k=Local%20grocery%20Bread%20/%20breakfast%20/%20snacks",
+    "note": "First week"
+  },
+  {
+    "category": "Cleaning",
+    "name": "Dish soap",
+    "brand": "Method",
+    "qty": 2,
+    "price": 5.0,
+    "evidence": "Budget estimate",
+    "url": "https://www.amazon.com/s?k=Method%20Dish%20soap",
+    "note": "Neutral packaging"
+  },
+  {
+    "category": "Cleaning",
+    "name": "Dishwasher detergent",
+    "brand": "Finish Quantum",
+    "qty": 1,
+    "price": 24.0,
+    "evidence": "Budget estimate",
+    "url": "https://www.amazon.com/s?k=Finish%20Quantum%20Dishwasher%20detergent",
+    "note": "Under sink"
+  },
+  {
+    "category": "Cleaning",
+    "name": "All-purpose spray",
+    "brand": "Method",
+    "qty": 2,
+    "price": 6.0,
+    "evidence": "Budget estimate",
+    "url": "https://www.amazon.com/s?k=Method%20All-purpose%20spray",
+    "note": "Under sink"
+  },
+  {
+    "category": "Cleaning",
+    "name": "Microfiber cloths 12-pack",
+    "brand": "Amazon Basics",
+    "qty": 1,
+    "price": 16.0,
+    "evidence": "Budget estimate",
+    "url": "https://www.amazon.com/s?k=Amazon%20Basics%20Microfiber%20cloths%2012-pack",
+    "note": "Neutral"
+  },
+  {
+    "category": "Cleaning",
+    "name": "Dish towels 8-pack",
+    "brand": "Utopia Towels",
+    "qty": 1,
+    "price": 24.0,
+    "evidence": "Budget estimate",
+    "url": "https://www.amazon.com/s?k=Utopia%20Towels%20Dish%20towels%208-pack",
+    "note": "White / gray"
+  },
+  {
+    "category": "Cleaning",
+    "name": "Scrub sponges 6-pack",
+    "brand": "Scotch-Brite",
+    "qty": 1,
+    "price": 12.0,
+    "evidence": "Budget estimate",
+    "url": "https://www.amazon.com/s?k=Scotch-Brite%20Scrub%20sponges%206-pack",
+    "note": "Under sink"
+  },
+  {
+    "category": "Cleaning",
+    "name": "Trash can 13-gallon",
+    "brand": "simplehuman",
+    "qty": 1,
+    "price": 130.0,
+    "evidence": "Budget estimate",
+    "url": "https://www.amazon.com/s?k=simplehuman%20Trash%20can%2013-gallon",
+    "note": "Brushed stainless"
+  },
+  {
+    "category": "Cleaning",
+    "name": "Trash bags 13-gallon",
+    "brand": "simplehuman Code H",
+    "qty": 1,
+    "price": 24.0,
+    "evidence": "Budget estimate",
+    "url": "https://www.amazon.com/s?k=simplehuman%20Code%20H%20Trash%20bags%2013-gallon",
+    "note": "Check bin code"
+  },
+  {
+    "category": "Paper",
+    "name": "Paper towels bulk pack",
+    "brand": "Bounty",
+    "qty": 1,
+    "price": 30.0,
+    "evidence": "Budget estimate",
+    "url": "https://www.amazon.com/s?k=Bounty%20Paper%20towels%20bulk%20pack",
+    "note": "Storage closet"
+  },
+  {
+    "category": "Paper",
+    "name": "Toilet paper bulk pack",
+    "brand": "Charmin Ultra Soft",
+    "qty": 1,
+    "price": 32.0,
+    "evidence": "Budget estimate",
+    "url": "https://www.amazon.com/s?k=Charmin%20Ultra%20Soft%20Toilet%20paper%20bulk%20pack",
+    "note": "Bathroom allocation"
+  },
+  {
+    "category": "Paper",
+    "name": "Aluminum foil",
+    "brand": "Reynolds Wrap",
+    "qty": 2,
+    "price": 8.0,
+    "evidence": "Budget estimate",
+    "url": "https://www.amazon.com/s?k=Reynolds%20Wrap%20Aluminum%20foil",
+    "note": "Pantry"
+  },
+  {
+    "category": "Paper",
+    "name": "Plastic wrap",
+    "brand": "Glad Press’n Seal",
+    "qty": 1,
+    "price": 8.0,
+    "evidence": "Budget estimate",
+    "url": "https://www.amazon.com/s?k=Glad%20Press%E2%80%99n%20Seal%20Plastic%20wrap",
+    "note": "Pantry"
+  },
+  {
+    "category": "Paper",
+    "name": "Parchment paper",
+    "brand": "Reynolds Kitchens",
+    "qty": 1,
+    "price": 8.0,
+    "evidence": "Budget estimate",
+    "url": "https://www.amazon.com/s?k=Reynolds%20Kitchens%20Parchment%20paper",
+    "note": "Pantry"
+  },
+  {
+    "category": "Paper",
+    "name": "Freezer bags assorted",
+    "brand": "Ziploc",
+    "qty": 2,
+    "price": 12.0,
+    "evidence": "Budget estimate",
+    "url": "https://www.amazon.com/s?k=Ziploc%20Freezer%20bags%20assorted",
+    "note": "Pantry"
+  },
+  {
+    "category": "Welcome",
+    "name": "Coffee beans",
+    "brand": "Peet’s",
+    "qty": 2,
+    "price": 18.0,
+    "evidence": "Budget estimate",
+    "url": "https://www.amazon.com/s?k=Peet%E2%80%99s%20Coffee%20beans",
+    "note": "Ask preference"
+  },
+  {
+    "category": "Welcome",
+    "name": "Tea assortment",
+    "brand": "Harney & Sons",
+    "qty": 1,
+    "price": 25.0,
+    "evidence": "Budget estimate",
+    "url": "https://www.amazon.com/s?k=Harney%20%26%20Sons%20Tea%20assortment",
+    "note": "Gift-ready"
+  },
+  {
+    "category": "Welcome",
+    "name": "Coffee maker",
+    "brand": "Breville Precision Brewer",
+    "qty": 1,
+    "price": 300.0,
+    "evidence": "Budget estimate",
+    "url": "https://www.amazon.com/s?k=Breville%20Precision%20Brewer%20Coffee%20maker",
+    "note": "Brushed stainless"
+  },
+  {
+    "category": "Welcome",
+    "name": "Electric kettle",
+    "brand": "OXO Brew",
+    "qty": 1,
+    "price": 100.0,
+    "evidence": "Budget estimate",
+    "url": "https://www.amazon.com/s?k=OXO%20Brew%20Electric%20kettle",
+    "note": "Stainless"
+  },
+  {
+    "category": "Welcome",
+    "name": "Welcome snacks / fruit / flowers",
+    "brand": "Local grocery / florist",
+    "qty": 1,
+    "price": 95.0,
+    "evidence": "Budget estimate",
+    "url": "https://www.amazon.com/s?k=Local%20grocery%20/%20florist%20Welcome%20snacks%20/%20fruit%20/%20flowers",
+    "note": "Day-of-arrival"
+  }
+]
