@@ -5,6 +5,14 @@ import initialProducts from './sampleData.json';
 const currency = n => new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(Number(n) || 0);
 const slug = s => String(s || '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
 const amazonSearch = name => `https://www.amazon.com/s?k=${encodeURIComponent(name)}&tag=bwtown1900-20`;
+const amazonLink = (url, name) => {
+  const href = url || amazonSearch(name);
+  try {
+    const parsed = new URL(href);
+    if (parsed.hostname.endsWith('amazon.com') && !parsed.searchParams.has('tag')) parsed.searchParams.set('tag', 'bwtown1900-20');
+    return parsed.toString();
+  } catch { return amazonSearch(name); }
+};
 
 function App() {
   const [products, setProducts] = useState(() => initialProducts.map((p, i) => ({ ...p, id: p.id || `${slug(p.category)}-${i}`, image: p.image || '', asin: p.asin || '' })));
@@ -50,7 +58,7 @@ function App() {
   }
   function importCsv(file) { loadWorkbook(file); }
   function exportCsv() {
-    const rows = [['Category', 'Item', 'Brand', 'Qty', 'Unit price', 'Subtotal', 'ASIN', 'Amazon link', 'Price source'], ...chosen.map(p => [p.category, p.name, p.brand, p.qty, p.price, p.price * p.qty, p.asin, p.url || amazonSearch(p.name), p.evidence])];
+    const rows = [['Category', 'Item', 'Brand', 'Qty', 'Unit price', 'Subtotal', 'ASIN', 'Amazon link', 'Price source'], ...chosen.map(p => [p.category, p.name, p.brand, p.qty, p.price, p.price * p.qty, p.asin, amazonLink(p.url, p.name), p.evidence])];
     const csv = rows.map(r => r.map(v => `"${String(v ?? '').replaceAll('"', '""')}"`).join(',')).join('\n');
     const a = document.createElement('a'); a.href = URL.createObjectURL(new Blob([csv], { type: 'text/csv' })); a.download = 'stage-this-selected-home-setup.csv'; a.click(); URL.revokeObjectURL(a.href);
   }
@@ -72,7 +80,7 @@ function App() {
           <input className="check" aria-label={`Select ${p.name}`} type="checkbox" checked={!!selected[p.id]} onChange={e => saveSelection({ ...selected, [p.id]: e.target.checked })} />
           <button className="thumb" title="Load product photo" onClick={() => imageInput.current[p.id]?.click()}>{p.image ? <img src={p.image} alt={p.name} /> : <span>＋<small>photo</small></span>}<input ref={el => imageInput.current[p.id] = el} type="file" accept="image/*" hidden onChange={e => loadImage(p.id, e.target.files[0])} /></button>
           <div className="details"><div className="item-name">{p.name}</div><div className="item-meta">{p.brand || 'Recommended item'} · Qty {p.qty || 1} · {p.evidence || 'Price to confirm'}</div><div className="editable"><label>ASIN <input value={p.asin || ''} placeholder="Add ASIN" onChange={e => updateProduct(p.id, { asin: e.target.value })} /></label><label>Image URL <input value={p.image?.startsWith('data:') ? '' : (p.image || '')} placeholder="Paste product image URL" onChange={e => updateProduct(p.id, { image: e.target.value })} /></label></div></div>
-          <div className="pricebox"><strong>{currency(p.price)}</strong><small>each</small><a href={p.url || amazonSearch(p.name)} target="_blank" rel="noreferrer">Amazon ↗</a></div>
+          <div className="pricebox"><strong>{currency(p.price)}</strong><small>each</small><a href={amazonLink(p.url, p.name)} target="_blank" rel="noreferrer">Amazon ↗</a></div>
         </div>)}</div>}</article>;
       })}</section>
       <aside className="side"><section className="panel"><div className="eyebrow">Catalog source</div><h2>Amazon product data</h2><p>Use the API notes to connect a backend that returns matching ASINs, product images, offer prices, and affiliate links.</p><div className="status"><span className="dot" /> Manual catalog mode</div><div className="small-note">This app shows the entered price and source label. It does not claim that a price is live.</div></section>
@@ -84,7 +92,7 @@ function App() {
         {chosen.length ? chosen.map(p => <div className="report-row" key={p.id}><span>{p.name} <small>× {p.qty || 1}</small></span><strong>{currency((p.price || 0) * (p.qty || 1))}</strong></div>) : <p>Select products to build a report.</p>}
         <div className="report-row total"><span>Estimated merchandise</span><span>{currency(total)}</span></div><p className="small-note">Excludes tax, delivery, and setup. Confirm availability, exact model, and final price with the seller.</p>
       </section>
-      </div><footer>Stage This · Executive relocation home setup</footer>
+      <footer>Stage This · Executive relocation home setup</footer>
     </main>
   </>;
 }
