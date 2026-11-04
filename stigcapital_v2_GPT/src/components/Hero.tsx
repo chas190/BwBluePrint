@@ -24,9 +24,9 @@ const Hero = () => {
           </div>
           
           <h1 className="mb-6 text-white mt-25">
-            ADD <span className="text-gradient-accent">Multi-Million</span> Revenue
+            <span className="text-gradient-accent">Increase</span> Revenue
             <br />
-            & <span className="text-gradient-accent">Increase</span> Profits that
+            & <span className="text-gradient-accent">Maximize</span> Profits to
             <br />
             <span className="text-gradient-accent">Catapult</span> Business Value
           </h1>
