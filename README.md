@@ -2,6 +2,14 @@
 
 BwTown web projects and independent development solutions.
 
+## STIG Capital V2
+
+`stigcapital_v2_GPT/` is an independent copy of `chas190/stigcapital`, preserving its React site and original images with GitHub Pages asset paths and router basename configured.
+
+Published path: https://chas190.github.io/BwBluePrint/stigcapital_v2_GPT/
+
+The shared Pages workflow builds and deploys it alongside the existing projects and includes it in the project directory.
+
 ## Uplift Foundation V2
 
 The `uplift_foundation_v2_GPT/` directory contains the responsive Uplift Foundation website. It introduces the mission, investment stewardship, project oversight, sustainable development alignment, and place-based community impact.

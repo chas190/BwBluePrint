@@ -1,0 +1,147 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 216 33% 97%;
+    --foreground: 215 25% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 215 25% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 215 25% 15%;
+
+    /* Brand Orange - Primary */
+    --primary: 28 100% 50%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 28 100% 60%;
+
+    /* Brand Blue - Secondary */
+    --secondary: 210 100% 45%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 215 20% 90%;
+    --muted-foreground: 215 15% 45%;
+
+    --accent: 28 100% 50%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 215 20% 88%;
+    --input: 215 20% 88%;
+    --ring: 28 100% 50%;
+
+    --radius: 0.75rem;
+
+    /* Custom brand colors */
+    --navy-dark: 215 45% 8%;
+    --navy-medium: 215 35% 15%;
+    --navy-light: 215 25% 25%;
+    
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(28 100% 50%), hsl(28 100% 60%));
+    --gradient-hero: linear-gradient(135deg, hsl(215 45% 8%), hsl(215 35% 15%), hsl(210 100% 20%));
+    --gradient-accent: linear-gradient(90deg, hsl(28 100% 50%), hsl(210 100% 45%));
+    
+    /* Shadows with brand colors */
+    --shadow-glow-orange: 0 0 40px hsla(28, 100%, 50%, 0.3);
+    --shadow-glow-blue: 0 0 40px hsla(210, 100%, 45%, 0.3);
+    --shadow-card: 0 10px 30px -5px hsla(215, 25%, 15%, 0.1);
+    
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+
+  .dark {
+    --background: 215 45% 8%;
+    --foreground: 0 0% 98%;
+
+    --card: 215 35% 12%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 215 35% 12%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 28 100% 55%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 28 100% 65%;
+
+    --secondary: 210 100% 50%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 215 25% 20%;
+    --muted-foreground: 215 15% 65%;
+
+    --accent: 28 100% 55%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 62.8% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 215 25% 20%;
+    --input: 215 25% 20%;
+    --ring: 28 100% 55%;
+    
+    --shadow-card: 0 20px 40px -10px hsla(0, 0%, 0%, 0.5);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold tracking-tight;
+  }
+  
+  h1 {
+    @apply text-5xl lg:text-7xl;
+  }
+  
+  h2 {
+    @apply text-4xl lg:text-5xl;
+  }
+  
+  h3 {
+    @apply text-3xl lg:text-4xl;
+  }
+}
+
+@layer utilities {
+  .text-gradient-primary {
+    background: linear-gradient(to right, hsl(var(--primary)), hsl(var(--primary-glow)));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .text-gradient-accent {
+    background: linear-gradient(to right, hsl(var(--primary)), hsl(var(--secondary)));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .glow-orange {
+    text-shadow: 0 0 20px hsla(28, 100%, 50%, 0.5);
+  }
+  
+  .glow-blue {
+    text-shadow: 0 0 20px hsla(210, 100%, 45%, 0.5);
+  }
+}
